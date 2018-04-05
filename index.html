@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Ganesh Khade">
     <link rel="icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
 
     <title>Days</title>
     <style type="text/css" media="screen">
@@ -23,7 +24,7 @@
         .big-font {
           font-family: "Playfair Display", serif;
           font-size: 25vw;
-          color: #2196f3;
+          color: #3F51B5;
         }
     </style>
   </head>
@@ -41,11 +42,9 @@
         var _MS_PER_DAY = 1000 * 60 * 60 * 24;
         var birthday = new Date('July 7, 1989 02:45:00'),
             today = new Date(),
-        difference = Math.floor((today - birthday)/_MS_PER_DAY),
-        number = document.getElementById("days");
+            difference = Math.floor((today - birthday)/_MS_PER_DAY),
+            number = document.getElementById("days");
         number.innerHTML = difference.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
-
       })();
     </script>
   </body>
