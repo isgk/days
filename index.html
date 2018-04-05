@@ -43,7 +43,8 @@
             today = new Date(),
         difference = Math.floor((today - birthday)/_MS_PER_DAY),
         number = document.getElementById("days");
-        number.innerHTML = difference;
+        number.innerHTML = difference.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
 
       })();
     </script>
